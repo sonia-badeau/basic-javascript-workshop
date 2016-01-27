@@ -110,3 +110,27 @@ function findLongestWord(string) {
 }
 
 findLongestWord('I am learning to code');
+
+//Write a function that takes a phrase, and returns the same phrase with every word capitalized. 
+//For example, if you pass your function "hello world", it should return "Hello World" and if you pass it "HELLO WORLD" 
+//or even "HeLLo WoRLD", it will also return "Hello World". 
+//Test your function of a few inputs.
+var wordCapitalized = function (string) {
+    var split = string.split(" ");
+    var result = [];
+    for (var i = 0; i < split.length; i++){
+    //
+    var firstLetter = split[i].substring(0,1).toUpperCase()
+    var body = split[i].substr(1,split[i].length-1);
+     var combine = firstLetter + body;
+     result.push(combine);
+    }
+    console.log(result.join(" "));
+    
+}
+wordCapitalized("I am learning JS");
+
+
+var name = "Sonia";
+console.log(name.length-1);
+console.log(name.charAt(name.length -1))
