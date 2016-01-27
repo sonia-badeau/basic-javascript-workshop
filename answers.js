@@ -65,3 +65,11 @@ var operation = function(number1, number2, string){
     }
 };
 operation();
+
+//Write a function that takes a string and a number, and returns the string repeated that many number of times. 
+//Test your function with various inputs.
+var repeat = function (string, number){
+    return string.repeat(number)
+}
+var result = repeat("Sonia", 8);
+console.log(result);
