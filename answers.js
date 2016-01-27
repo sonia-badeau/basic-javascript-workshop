@@ -40,3 +40,28 @@ var mult = function(number1, number2){
     return number1 * number2;
 }
 mult(6,7);
+
+//Write a function that takes two numbers and a string. 
+//If the string is ‘add’, then return the sum of the numbers. 
+//If the string is ‘subtract’, return the difference. 
+//If the string is ‘mult’, return the product. 
+//If the string is ‘div’, return the ratio. 
+//Otherwise return 0.
+var operation = function(number1, number2, string){
+    if (string === "add") {
+        return number1 + number2;
+    }
+    else if (string === "substract") {
+        return number1 - number2;
+    }
+    else if (string === "mult") {
+        return number1 * number2;
+    }
+    else if (string === "div") {
+        return number1 / number2;
+    }
+    else {
+        return 0;
+    }
+};
+operation();
