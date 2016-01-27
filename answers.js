@@ -77,7 +77,20 @@ console.log(result);
 //Write a function that takes a string, and returns the reverse of that string. 
 //For example, if you pass the function the string “hello”, it should return “olleh”. Test your function on a few inputs, including the empty string.
 var reverse = function(string){
+    var string = "hello";
     for (var i = 0; i < 6; i--) {
         return "olleh";
     }
 };
+reverse("hello");
+
+//Write a function that takes a number and returns the factorial of a number. 
+//The factorial of 5 is 5x4x3x2x1. The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.
+var factorial = function(number) {
+    var result = 1;
+    for (var i = 1; i <= number; i++) {
+     result *= i;
+    }
+    return result;
+}
+factorial(1);
