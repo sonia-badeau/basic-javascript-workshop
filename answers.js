@@ -94,3 +94,19 @@ var factorial = function(number) {
     return result;
 }
 factorial(1);
+
+//Write a function that takes a phrase as a string, and returns the longest word in that phrase. 
+//If the phrase contains more than one such word, return the first occurrence. Test your function on a few inputs.
+function findLongestWord(string) {
+    
+  var words = string.split(' ');
+  var longestWord = "";
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].length > longestWord.length) {
+      longestWord = words[i];
+    }
+  }
+  return longestWord;
+}
+
+findLongestWord('I am learning to code');
