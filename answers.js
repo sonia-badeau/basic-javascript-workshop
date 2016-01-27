@@ -25,3 +25,10 @@ var stringNumber = function(string, number) {
     var res = string.charAt(5); 
 };
 
+//Write a function that takes two numbers and adds them together. 
+//Test your function on a few inputs. Write in the comments what happens when you pass something other than a number to your function.
+//This function allows to add two numbers
+var sum = function(number1, number2){
+    return number1 + number2;
+}
+sum(4,9);
