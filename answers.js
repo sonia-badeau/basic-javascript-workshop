@@ -32,3 +32,11 @@ var sum = function(number1, number2){
     return number1 + number2;
 }
 sum(4,9);
+
+//Write a function that takes two numbers and multiplies them together. 
+//Test your function on a few inputs. Write in your comments what happens when you pass something other than a number to your function.
+//This function allows to multiply two numbers
+var mult = function(number1, number2){
+    return number1 * number2;
+}
+mult(6,7);
