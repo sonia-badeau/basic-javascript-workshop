@@ -149,3 +149,31 @@ var maximum = theArray[0];
 };
 
 console.log(largestNumber(myArray));
+
+
+
+//Write a function that takes an array, and returns a filtered array. 
+//The filtered array should only contain the truthy values from the initial array. 
+//Hint: there is an array method called filter that can help you with this :)
+
+var myArray = [false, 2, 6, null, 89, 5, ""];
+var myFilter = function (theArray) {
+    var myFunction = function(myVariable){
+        return myVariable;
+    }
+    return theArray.filter(myFunction);
+}
+
+console.log(myFilter(myArray));
+
+//Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.
+
+var myArray = [2, 6, 89, 5];
+var mySum = function(theArray) {
+    var result = 0;
+    for (var i = 0; i < theArray.length; i++){
+        result += theArray[i];
+    }
+    return result;
+}
+console.log(mySum(myArray));
