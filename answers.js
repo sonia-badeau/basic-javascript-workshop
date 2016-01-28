@@ -177,3 +177,4 @@ var mySum = function(theArray) {
     return result;
 }
 console.log(mySum(myArray));
+
