@@ -134,3 +134,18 @@ wordCapitalized("I am learning JS");
 var name = "Sonia";
 console.log(name.length-1);
 console.log(name.charAt(name.length -1))
+
+//Write a function that takes an array and returns the largest number of the array. 
+//Test your function on a few inputs.
+var myArray = [2, 6, 89, 5];
+var largestNumber = function(theArray) {
+var maximum = theArray[0];
+    for (var i = 1; i < theArray.length; i++){
+        if (maximum < theArray[i]) {
+            maximum = theArray[i];
+         }
+    }
+    return maximum;
+};
+
+console.log(largestNumber(myArray));
