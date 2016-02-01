@@ -178,3 +178,20 @@ var mySum = function(theArray) {
 }
 console.log(mySum(myArray));
 
+//Mini Challenge ---
+
+function newFunction (myArray, func) {
+    var newArray = [];
+    for (var i = 0; i < myArray.length; i++) {
+        newArray[i] = func(myArray[i]);
+    }
+    
+    return newArray;
+}
+
+function square(myNumber) {
+    return myNumber * myNumber;
+}
+var value = [1,2,3,4,5];
+
+console.log(newFunction(value, square));
